@@ -1,0 +1,88 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    color: white;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    border:2px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#b0{
+    border-bottom: 7px solid grey;
+    border-right:7px solid grey ;
+}
+#b8{
+    border-left:7px solid grey ;
+    border-top:7px solid grey ;
+}
+#b7{
+    border-top:7px solid grey ;
+}
+#b6{
+    border-top: 7px solid grey;
+    border-right:7px solid grey ;
+}
+#b2{
+    border-left: 7px solid grey;
+    border-bottom: 7px solid grey;
+}
+#b3{
+    border-right:7px solid grey ;
+}
+#b5{
+    border-left:7px solid grey ;
+}
+#b1{
+    border-bottom:7px solid grey ;
+}
+#status{
+    height: 30px;
+    width: auto;
+    color: darkorange;
+    font-weight: 500;
+    margin: 20px;
+    border-radius: 3px ;
+}
+button{
+    width: 147px;
+    height: 30px;
+    font-size: 25px;
+    color: black;
+    border: 1.5px solid rgb(0, 0, 0);
+   border-radius: 30px;
+   cursor: pointer;
+}
+.win{
+    animation: winani ease-in-out is infinite;
+}
+@keyframes winani{
+    0%{
+        background-color: rgb(153, 255, 0);
+    }
+    100%{
+        background-color: crimson;
+    }
+}
